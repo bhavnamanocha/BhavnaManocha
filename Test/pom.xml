@@ -24,26 +24,26 @@
         </configuration>
       </plugin>      
      
-		<!-- Bhavna Start -->	
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-jxr-plugin</artifactId>
-			<version>2.3</version>
-		</plugin>
-			
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-pmd-plugin</artifactId>
-			<version>2.7.1</version>
-			<configuration>
-			<linkXRef>false</linkXRef>
-			<targetJdk>1.8</targetJdk>
-			<rulesets>
-			<ruleset>/pmd_results.xml</ruleset>
-			</rulesets>
-			</configuration>
-		</plugin>
-			
+		<!-- Bhavna Start -->			
+	<reporting> 
+        <plugins> 
+            <plugin> 
+                <groupId>org.apache.maven.plugins</groupId> 
+                <artifactId>maven-pmd-plugin</artifactId> 
+                <configuration> 
+                    <rulesets> 
+                        <!-- this "../" is not a good practice but it 
+works--> 
+                        <ruleset>../pmd-config.xml</ruleset> 
+                    </rulesets> 
+                    <sourceEncoding>utf-8</sourceEncoding> 
+                    <minimumTokens>100</minimumTokens> 
+                    <!-- <targetJdk>1.8</targetJdk> -->
+                </configuration> 
+            </plugin> 
+
+        </plugins> 
+    </reporting> 
       <!-- Bhavna End -->
     </plugins>
   </build>
