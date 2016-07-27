@@ -4,11 +4,11 @@
   <artifactId>Test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <!-- Bhavna Start -->
+  <!-- Bhavna Start 
   <properties>
   <jenkins.e2eTests.reportsDirectory>target/protractor-reports</jenkins.e2eTests.reportsDirectory>
   </properties>
-  <!-- Bhavna End -->
+   Bhavna End -->
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
